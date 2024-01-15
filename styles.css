@@ -6,5 +6,15 @@ a {
     color: white;
 }
 h1 {
+    font-weight: bold;
+    font-style: oblique;
     color:red
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  object-fit: cover;
 }
