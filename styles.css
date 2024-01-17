@@ -130,6 +130,7 @@ footer {
         font-size: 18px; /* Adjust button font size for smaller screens */
         margin: 20px 10px 10px;
         padding: 10px;
+        display: block;
     }
 
     li {
@@ -146,6 +147,6 @@ footer {
     }
 
     footer {
-        margin-top: 100px; /* Adjust footer margin for smaller screens */
+        margin-top: 10px; /* Adjust footer margin for smaller screens */
     }
 }
