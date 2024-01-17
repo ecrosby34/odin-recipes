@@ -106,13 +106,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
+    .homebody {
         background-image: none; /* Remove background image for smaller screens */
     }
 
-    .homebody {
-        background-size: cover; /* Adjust background size for smaller screens if needed */
-    }
 
     h1 {
         font-size: 40px; /* Adjust heading font size for smaller screens */
