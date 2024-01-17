@@ -104,3 +104,45 @@ footer {
     margin-top: 600px;
     text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: none; /* Remove background image for smaller screens */
+    }
+
+    .homebody {
+        background-size: cover; /* Adjust background size for smaller screens if needed */
+    }
+
+    h1 {
+        font-size: 40px; /* Adjust heading font size for smaller screens */
+        margin: 10px;
+        padding: 10px;
+    }
+
+    a {
+        font-size: 18px; /* Adjust link font size for smaller screens */
+        margin: 20px 10px 10px;
+    }
+
+    .button {
+        font-size: 18px; /* Adjust button font size for smaller screens */
+        margin: 20px 10px 10px;
+    }
+
+    li {
+        padding: 15px; /* Adjust list item padding for smaller screens */
+    }
+
+    .center {
+        width: 80%; /* Adjust center element width for smaller screens */
+    }
+
+    p {
+        font-size: 16px; /* Adjust paragraph font size for smaller screens */
+    }
+
+    footer {
+        margin-top: 100px; /* Adjust footer margin for smaller screens */
+    }
+}
