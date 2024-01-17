@@ -107,7 +107,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     body {
-        display: contents;
+        display: block;
         background-image: none; /* Remove background image for smaller screens */
     }
 
