@@ -59,11 +59,17 @@ a {
     padding: auto;
 }
 
-/* Style for buttons */
-.button {
+/* Style for links and buttons */
+a, .button {
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    border: 5px solid;
+    margin: 50px 20px 20px;
+    padding: auto;
     font: bold 22px Arial;
     text-decoration: none;
-    background-color: red ;
+    background-color: red;
     color: white;
     padding: 2px 6px 2px 6px;
     border-radius: 12px;
@@ -72,13 +78,12 @@ a {
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
     transition-duration: .2s;
-  }
-  
-  .button:hover {
+}
+
+a:hover, .button:hover {
     background-color: #04AA6D; /* Green */
-  color: white;
-  
-  }
+    color: white;
+}
 /* Style for list items */
 li {
     list-style: none;
@@ -122,9 +127,10 @@ footer {
         margin: 20px 10px 10px;
     }
 
-    .button {
+    a, .button {
         font-size: 18px; /* Adjust button font size for smaller screens */
         margin: 20px 10px 10px;
+        padding: 10px;
     }
 
     li {
