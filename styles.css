@@ -112,7 +112,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .homebody {
-        background-image: none; /* Remove background image for smaller screens */
+        background-image: cover; /* Remove background image for smaller screens */
     }
 
 
