@@ -59,19 +59,17 @@ a {
     padding: auto;
 }
 
-/* Style for links and buttons */
 a, .button {
     text-decoration: none;
     font-size: 25px;
     color: red;
     border: 5px solid;
     margin: 50px 20px 20px;
-    padding: auto;
     font: bold 22px Arial;
     text-decoration: none;
     background-color: red;
     color: white;
-    padding: 2px 6px 2px 6px;
+    padding: 10px 20px; /* Adjust padding values accordingly */
     border-radius: 12px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
@@ -79,6 +77,7 @@ a, .button {
     border-left: 1px solid #CCCCCC;
     transition-duration: .2s;
 }
+
 
 a:hover, .button:hover {
     background-color: #04AA6D; /* Green */
