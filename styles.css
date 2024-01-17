@@ -107,7 +107,6 @@ footer {
 
 @media only screen and (max-width: 768px) {
     body {
-        display: block;
         background-image: none; /* Remove background image for smaller screens */
     }
 
@@ -133,6 +132,7 @@ footer {
 
     li {
         padding: 15px; /* Adjust list item padding for smaller screens */
+        display: block;
     }
 
     .center {
