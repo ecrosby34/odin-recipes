@@ -5,12 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margherita Pizza Recipe</title>
+    <style>
+        body {
+            text-align: center; /* Center inline elements */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+        }
+
+        .button {
+            margin-top: 20px; /* Adjust top margin for spacing */
+        }
+
+        .ingredients {
+            margin-top: 20px; /* Adjust top margin for spacing */
+        }
+
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ingredients ul li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Margherita Pizza Recipe</h1>
-    <a href="../index.html" class="button">Home Page</a>
+    <div class="container">
+        <h1>Margherita Pizza Recipe</h1>
+        <a href="../index.html" class="button">Home Page</a>
         <p>
-        <img src="../images/pizza.jpg" alt="Classic Italian Margerita Pizza" height="310" width="310" style="border-radius: 12px; border: solid red 4px;">
+            <img src="../images/pizza.jpg" alt="Classic Italian Pizza" height="310" width="310" style="border-radius: 12px; border: solid red 4px;">
         </p>
         <h2>Description</h2>
         <p>Margherita Pizza is a classic Italian pizza known for its simplicity and high-quality ingredients. It's named after Queen Margherita of Italy and is said to represent the colors of the Italian flag with its red tomato sauce, white mozzarella cheese, and green basil leaves. Here's a description of the components:</p>
@@ -28,27 +59,29 @@
         <p>The pizza is traditionally cooked in a wood-fired pizza oven, which imparts a characteristic smokiness and crispiness to the crust. However, it can also be baked in a conventional oven at high temperatures.</p>
 
         <p>Margherita Pizza is celebrated for its purity and emphasis on quality ingredients. It has become a symbol of traditional Italian pizza, and its timeless combination of flavors continues to be enjoyed worldwide.</p>
-        <p><h2>Ingredients</h2></p>
-        <p>For the Pizza Dough:</p>
-        <p>
-        <ul>
-            <li>2 1/4 teaspoons (1 packet) active dry yeast</li>
-            <li>1 teaspoon sugar</li>
-            <li>3/4 cup warm water</li>
-            <li>2 cups all-purpose flour</li>
-            <li>1 teaspoon salt</li>
-            <li>1 tablespoon olive oil</li>
-        </ul>
-        <p>For the Pizza Toppings:</p>
-        <ul>
-            <li>1 cup tomato sauce (passata or crushed tomatoes work well)</li>
-            <li>1-2 cloves garlic, minced</li>
-            <li>Fresh mozzarella cheese, sliced</li>
-            <li>Fresh basil leaves</li>
-            <li>Extra virgin olive oil</li>
-            <li>Salt and pepper to taste</li>
-        </ul>
-        </p>
+
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <p><u>For the Pizza Dough:</u></p>
+            <ul>
+                <li>2 1/4 teaspoons (1 packet) active dry yeast</li>
+                <li>1 teaspoon sugar</li>
+                <li>3/4 cup warm water</li>
+                <li>2 cups all-purpose flour</li>
+                <li>1 teaspoon salt</li>
+                <li>1 tablespoon olive oil</li>
+            </ul>
+            <p><u>For the Pizza Toppings:</u></p>
+            <ul>
+                <li>1 cup tomato sauce (passata or crushed tomatoes work well)</li>
+                <li>1-2 cloves garlic, minced</li>
+                <li>Fresh mozzarella cheese, sliced</li>
+                <li>Fresh basil leaves</li>
+                <li>Extra virgin olive oil</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+        </div>
+
         <p><h2>Instructions</h2></p>
         <p><ol>
             <li><strong>Prepare the Pizza Dough:</strong></li>
@@ -100,5 +133,6 @@
         </ol>
         </p>
         <p><em>Enjoy your homemade Margherita Pizza! Feel free to get creative and add your own twists to the recipe!</em></p>
+    </div>
 </body>
 </html>
