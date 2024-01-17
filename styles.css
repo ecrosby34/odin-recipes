@@ -4,35 +4,33 @@
 }
 
 /* Flex container for the body */
+.homebody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+    line-height: 1.5;
+    background-image: url(./images/chefone.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
 
-    .homebody {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: white;
-        line-height: 1.5;
-        background-image: url(./images/chefone.jpg);
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: white;
-        line-height: 1.5;
-        background-image: url(./images/stock);
-        background-repeat: repeat;
-        background-position: left;
-        background-size: cover ;
-    }
-    
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+    line-height: 1.5;
+    background-image: url(./images/stock);
+    background-repeat: repeat;
+    background-position: left;
+    background-size: cover;
+}
 
 /* Style for main heading */
 h1 {
@@ -49,40 +47,66 @@ h1 {
     box-sizing: border-box;
 }
 
-/* Style for links */
-a {
-    text-decoration: none;
-    font-size: 25px;
-    color: red;
-    border: 5px solid;
-    margin: 50px 20px 20px;
-    padding: auto;
-}
-
+/* Style for links and buttons */
 a, .button {
     text-decoration: none;
     font-size: 25px;
     color: red;
     border: 5px solid;
-    margin: 50px 20px 20px;
+    margin: 20px;
+    padding: 10px 20px;
     font: bold 22px Arial;
     text-decoration: none;
     background-color: red;
     color: white;
-    padding: 10px 20px; /* Adjust padding values accordingly */
     border-radius: 12px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
     transition-duration: .2s;
+    display: inline-block; /* To prevent full width */
+    text-align: center; /* Center text within the box */
 }
 
-
-a:hover, .button:hover {
-    background-color: #04AA6D; /* Green */
-    color: white;
+/* Style for the main container (flex container) */
+main {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed for spacing between link-containers */
 }
+
+/* Add a specific style for images inside anchor tags */
+a img {
+    display: block; /* Remove any default inline display */
+    margin: 20px 0; /* Add margin to the top and bottom of the images */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition-duration: .2s; /* Transition for smooth effect */
+}
+
+/* Add a specific style for images inside anchor tags on the index page */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Add right margin to match links */
+}
+
+.link-container img {
+    border: none;
+    display: block; /* Remove any default inline display */
+    width: 100%; /* Make images fill the container width */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition-duration: .2s; /* Transition for smooth effect */
+}
+
+/* Hover effect for images */
+a:hover img,
+.link-container:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
 /* Style for list items */
 li {
     list-style: none;
@@ -105,49 +129,52 @@ p {
 
 /* Style for the footer */
 footer {
-    margin-top: 600px;
+    margin-top: 300px;
     text-align: center;
+    background-color: red;
+    color: white;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
     .homebody {
-        background-image: cover; /* Remove background image for smaller screens */
+        background-image: cover;
     }
 
-
     h1 {
-        font-size: 40px; /* Adjust heading font size for smaller screens */
+        font-size: 40px;
         margin: 10px;
         padding: 10px;
     }
 
-    a {
-        font-size: 18px; /* Adjust link font size for smaller screens */
-        margin: 20px 10px 10px;
+    a, .button {
+        font-size: 18px;
+        margin: 10px;
     }
 
-    a, .button {
-        font-size: 18px; /* Adjust button font size for smaller screens */
-        margin: 20px 10px 10px;
-        padding: 10px;
-        display: block;
+    main {
+        flex-direction: column; /* Stack link-containers vertically on smaller screens */
+    }
+
+    .link-container img {
+        height: auto; /* Reset height for smaller screens */
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin: 10px 0; /* Add margin to the top and bottom of the images on smaller screens */
     }
 
     li {
-        padding: 15px; /* Adjust list item padding for smaller screens */
-        
+        padding: 15px;
     }
 
     .center {
-        width: 80%; /* Adjust center element width for smaller screens */
+        width: 80%;
     }
 
     p {
-        font-size: 16px; /* Adjust paragraph font size for smaller screens */
+        font-size: 16px;
     }
 
     footer {
-        margin-top: 10px; /* Adjust footer margin for smaller screens */
-        text-align: center;
+        margin-top: 10px;
     }
 }
