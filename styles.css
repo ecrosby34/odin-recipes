@@ -135,7 +135,7 @@ footer {
 
     li {
         padding: 15px; /* Adjust list item padding for smaller screens */
-        display: block;
+        
     }
 
     .center {
@@ -148,5 +148,6 @@ footer {
 
     footer {
         margin-top: 10px; /* Adjust footer margin for smaller screens */
+        text-align: center;
     }
 }
