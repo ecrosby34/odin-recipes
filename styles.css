@@ -1,3 +1,10 @@
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/bradobrei */
+@import "https://fonts.fontstorage.com/import/bradobrei.css";
+/*
+	Bradobrei, 400
+*/
+
+
 /* Reset box-sizing for all elements */
 * {
     box-sizing: border-box;
@@ -18,13 +25,18 @@
     background-size: cover;
 }
 
+.container {
+    color: white;
+    
+}
+
 /* Style for main heading */
 h1 {
     text-align: center;
     font-size: 60px;
+    font-family:Bradobrei;
     font-weight: bold;
-    font-style: oblique;
-    color: red;
+    color:  white;
     margin: 20px;
     padding: 20px;
 
@@ -34,12 +46,12 @@ h1 {
 .button {
     text-decoration: none;
     font-size: 25px;
-    color: red;
+    color: grey;
     border: 5px solid;
     margin: 20px;
     padding: 10px 20px;
-    font: bold 22px Arial;
-    background-color: red;
+    font: bold 22px Bradobrei;
+    background-color:grey;
     color: white;
     border-radius: 12px;
     border-top: 1px solid #CCCCCC;
@@ -111,7 +123,7 @@ h1 {
     padding: 2px;
     width: 200px;
     background-color: white;
-    border: 3px solid red;
+    border: 3px solid grey;
     border-radius: 12px;
     transition-duration: .2s;
     
@@ -119,6 +131,7 @@ h1 {
 
 .card:hover {
     transform: scale(1.5);
+    background-color: gray;
 }
 
 .card img {
@@ -141,7 +154,7 @@ main {
 footer {
     margin-top: 300px;
     text-align: center;
-    background-color: red;
+    background-color:grey;
     color: white;
     padding: 10px;
 }
