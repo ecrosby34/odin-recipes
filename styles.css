@@ -172,7 +172,9 @@ footer {
 
     .button, .img-link {
         font-size: 18px;
-        margin: 10px;
+       
+        display:flex;
+        
     }
 
     main {
@@ -193,5 +195,13 @@ footer {
 
     footer {
         margin-top: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+
     }
 }
